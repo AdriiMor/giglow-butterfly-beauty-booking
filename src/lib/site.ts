@@ -16,5 +16,6 @@ export function whatsappLink(service?: string): string {
   const text = service
     ? `Hola GiglowSpa ✨ Me gustaría agendar una cita para ${service}.`
     : "Hola GiglowSpa ✨ Me gustaría agendar una cita.";
-  return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
+  // Direct api.whatsapp.com link: wa.me redirects, which breaks the emoji and can fail inside embedded previews.
+  return `https://api.whatsapp.com/send?phone=${WHATSAPP_NUMBER}&text=${encodeURIComponent(text)}`;
 }

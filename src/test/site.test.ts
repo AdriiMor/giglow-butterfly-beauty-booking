@@ -5,7 +5,9 @@ import { whatsappLink } from "@/lib/site";
 
 describe("Agendar cita", () => {
   it("opens the GiglowSpa WhatsApp +52 55 4027 4925", () => {
-    expect(whatsappLink()).toMatch(/^https:\/\/wa\.me\/525540274925\?text=/);
+    const url = new URL(whatsappLink());
+    expect(url.hostname).toBe("api.whatsapp.com");
+    expect(url.searchParams.get("phone")).toBe("525540274925");
   });
 
   it("mentions the chosen treatment in the WhatsApp message", () => {
