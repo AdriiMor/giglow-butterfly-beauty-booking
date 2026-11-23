@@ -105,7 +105,7 @@ export const services: Service[] = [
     benefits: [
       "Limpieza suave del oído",
       "Alivia la sensación de oído tapado",
-      "Aminora dolore de cabeza",
+      "Aminora dolores de cabeza",
       "Sensación de ligereza",
     ],
   },
