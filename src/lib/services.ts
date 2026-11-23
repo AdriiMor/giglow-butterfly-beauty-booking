@@ -74,7 +74,7 @@ export const services: Service[] = [
     how: "Se aplican en sesiones programadas; el volumen y la firmeza aparecen de forma gradual y natural.",
     benefits: [
       "Aumento de volumen gradual y natural",
-      "Efecto lifting y firmeza",
+      "Firmeza",
       "Mejora la forma de la zona",
       "Sin cirugía",
     ],
