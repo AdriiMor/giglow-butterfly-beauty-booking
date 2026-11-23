@@ -28,3 +28,7 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+- Business contact data (WhatsApp, Instagram, address, map URLs) lives only in `src/lib/site.ts`, and every booking button uses `whatsappLink()`; one place to update contact info.
+- Service content (name, copy, benefits, illustration) lives in `src/lib/services.ts`; pages and the carousel render from it so services are edited in one spot.
+- Site UI pieces live in `src/components/site/`; colors, gradients, fonts and animations are tokens in `src/styles.css`, with extra Button variants (hero, soft, light, outlineSoft) instead of ad hoc classes.
