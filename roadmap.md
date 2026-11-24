@@ -6,3 +6,4 @@
 - [x] WhatsApp +52 5540274925 conectado
 - [x] Instagram @giglowspa
 - [x] Dirección: Presas, Tezontepec de Aldama, Hgo
+- [x] Asesora con IA en Servicios: la clienta describe objetivos/dudas y recibe tratamientos recomendados

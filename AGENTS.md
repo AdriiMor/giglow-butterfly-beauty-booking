@@ -32,3 +32,4 @@ use the editor.
 - Business contact data (WhatsApp, Instagram, address, map URLs) lives only in `src/lib/site.ts`, and every booking button uses `whatsappLink()`; one place to update contact info.
 - Service content (name, copy, benefits, illustration) lives in `src/lib/services.ts`; pages and the carousel render from it so services are edited in one spot.
 - Site UI pieces live in `src/components/site/`; colors, gradients, fonts and animations are tokens in `src/styles.css`, with extra Button variants (hero, soft, light, outlineSoft) instead of ad hoc classes.
+- The AI treatment advisor ("Gi") calls Lovable AI Gateway only from `src/lib/ai/advisor.server.ts` via the public `askAdvisor` server function; its catalog comes from `src/lib/services.ts` so recommendations stay in sync with the service list.

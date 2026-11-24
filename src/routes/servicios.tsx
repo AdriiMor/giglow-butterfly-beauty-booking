@@ -4,6 +4,7 @@ import { BookButton } from "@/components/site/BookButton";
 import { Sparkle, Swirl } from "@/components/site/Doodles";
 import { Reveal } from "@/components/site/Reveal";
 import { SectionHeading } from "@/components/site/SectionHeading";
+import { ServiceAdvisor } from "@/components/site/ServiceAdvisor";
 import { ServiceCarousel } from "@/components/site/ServiceCarousel";
 
 export const Route = createFileRoute("/servicios")({
@@ -47,11 +48,20 @@ function ServicesPage() {
         </Reveal>
       </section>
 
-      <section className="mx-auto max-w-3xl px-5 pt-10 text-center">
+      <section id="asesora" className="mx-auto max-w-4xl scroll-mt-24 px-5 pt-10">
         <Reveal>
-          <p className="font-display text-3xl italic text-foreground">¿No sabes cuál elegir?</p>
-          <p className="mt-3 text-muted-foreground">Escríbenos y te ayudamos a encontrar el tratamiento ideal para ti.</p>
-          <BookButton size="xl" className="mt-7" />
+          <div className="mb-6 text-center">
+            <p className="font-display text-3xl italic text-foreground">¿No sabes cuál elegir?</p>
+            <p className="mt-3 text-muted-foreground">Cuéntanos tus objetivos y te recomendamos el tratamiento ideal para ti.</p>
+          </div>
+          <ServiceAdvisor />
+        </Reveal>
+      </section>
+
+      <section className="mx-auto max-w-3xl px-5 pt-12 text-center">
+        <Reveal>
+          <p className="text-muted-foreground">¿Prefieres platicarlo directamente? Escríbenos por WhatsApp.</p>
+          <BookButton size="xl" className="mt-5" />
         </Reveal>
       </section>
     </>
